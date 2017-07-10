@@ -12,6 +12,7 @@
     "gh-pages": "^1.0.0",
     "react-scripts": "1.0.10"
   },
+  "homepage": "https://alif50.github.io/fcc-todoapp",
   "scripts": {
     "deploy" : "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
