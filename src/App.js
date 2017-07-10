@@ -10,7 +10,7 @@ class App extends Component {
     let toDos = localStorage.getItem('todos'); //convert string into an array
     if(toDos){
       this.state = {
-        toDos: toDos.split(',');
+        toDos: toDos.split(',')
       };
     }else{
       localStorage.setItem('todos', initialData.toString()); //convert array into a string
