@@ -7,10 +7,10 @@ import AddItem from './components/AddItem';
 class App extends Component {
   constructor(props){
     super(props);
-    let toDos = localStorage.getItem('todos').split(','); //convert string into an array
+    let toDos = localStorage.getItem('todos'); //convert string into an array
     if(toDos){
       this.state = {
-        toDos: toDos
+        toDos: toDos.split(',');
       };
     }else{
       localStorage.setItem('todos', initialData.toString()); //convert array into a string
