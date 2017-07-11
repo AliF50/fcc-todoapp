@@ -30,7 +30,6 @@ class App extends Component {
     this.setState({
       toDos: newToDos
     }, () => localStorage.setItem('todos', newToDos.toString()));
-    
   }
 
   componentWillUnmount(){ //for unmounting so it is still in local storage
